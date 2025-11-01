@@ -1,0 +1,101 @@
+[
+  {
+    "no": 1,
+    "nama": "Perencanaan Kebutuhan dan Penganggaran",
+    "link": "https://drive.google.com/drive/folders/1csDUdqBVygW1p926GXNmGhFzF1q9cQDb",
+    "children": [
+      {
+        "nama": "Usulan Pengadaan Aset Tetap dan Persediaan",
+        "link": "https://drive.google.com/drive/folders/1tMmit-_ZJt4_lbYyo-nNQlwFZEbav-jX"
+      },
+      {
+        "nama": "Rencana Kebutuhan Barang Milik Daerah (RKBMD)",
+        "link": "https://drive.google.com/drive/folders/1eTJH1WqdZxiw9A9Nfu3sXNOBtJcd2bQB"
+      }
+    ]
+  },
+  {
+    "no": 2,
+    "nama": "Pengadaan",
+    "link": "https://drive.google.com/drive/folders/1q5V2Nd7KB0DOXLn6bwhG55Rwh9Zrv_kn",
+    "children": [
+      {
+        "nama": "Dokumen Pengadaan BMD",
+        "link": "https://drive.google.com/drive/folders/1NP9wpuuh_0RTZu7q0hVmStJBEvMrsYCA"
+      },
+      {
+        "nama": "Laporan Pengadaan BMD",
+        "link": "https://drive.google.com/drive/folders/1Th0uutgbwZHcslXR1AC5rRo22jMrVBEc"
+      }
+    ]
+  },
+  {
+    "no": 3,
+    "nama": "Penggunaan",
+    "link": "https://drive.google.com/drive/folders/1gVRLew183FPS5XxYVrROICUhghORmorf",
+    "children": [
+      {
+        "nama": "Penetapan Status Penggunaan",
+        "link": "https://drive.google.com/drive/folders/1BxDZssFf8ldO-wyuEbz1EHdl36CZuAJ-"
+      }
+    ]
+  },
+  {
+    "no": 4,
+    "nama": "Pemanfaatan",
+    "link": "https://drive.google.com/drive/folders/1nrx1LRqQ3jpYop8TwSGCFDWLruCNEG5b"
+  },
+  {
+    "no": 5,
+    "nama": "Pengamanan dan Pemeliharaan",
+    "link": "https://drive.google.com/drive/folders/1AMZwwwSv88qsXZf0WjZ-Vt8PJnxVZrQd",
+    "children": [
+      {
+        "nama": "Sertifikat Tanah Balkesmas Wilayah Ambarawa",
+        "link": "https://drive.google.com/drive/folders/17oIAvRNgLcKVPflphSNqz0Wkm0c_k41Q"
+      },
+      {
+        "nama": "IMB Balkesmas Wilayah Ambarawa",
+        "link": "https://drive.google.com/drive/folders/1BzBDSzt7JqN4FPCBXJ6UEacr-3YzQywa"
+      },
+      {
+        "nama": "BPKB Balkesmas Wilayah Ambarawa",
+        "link": "https://drive.google.com/drive/folders/1tayvCO_g6Ri1NJmjgMmhCm6praBRp1zk"
+      },
+      {
+        "nama": "Sensus Barang Milik Daerah",
+        "link": "https://drive.google.com/drive/folders/1D6BRh-h0S0D6gc90DkgF2cDETkzSorai"
+      }
+    ]
+  },
+  {
+    "no": 6,
+    "nama": "Penilaian",
+    "link": "https://drive.google.com/drive/folders/1K_TQX0RLOXBRGXf2lMwhhDhEx8hTxAOf"
+  },
+  {
+    "no": 7,
+    "nama": "Pemindahtanganan",
+    "link": "https://drive.google.com/drive/folders/155ytJ4uQ8H92Y81Ge5n64mFbfKp_1hIz"
+  },
+  {
+    "no": 8,
+    "nama": "Pemusnahan",
+    "link": "https://drive.google.com/drive/folders/1h713MnEcyCEsbG_srV0x-uaqTtUJ8l2V"
+  },
+  {
+    "no": 9,
+    "nama": "Penghapusan",
+    "link": "https://drive.google.com/drive/folders/1mMhsKDwhMli9qezmY1Q7FwuWg6d9-29I"
+  },
+  {
+    "no": 10,
+    "nama": "Penatausahaan dan Pembinaan",
+    "link": "https://drive.google.com/drive/folders/1sUBpdiaCnCnXOo1quw0y3teF_D6zHc1w"
+  },
+  {
+    "no": 11,
+    "nama": "Pengawasan dan Pengendalian",
+    "link": "https://drive.google.com/drive/folders/1R7BCoebI4kOSeYNIC7hMmrZZZmsVBSzK"
+  }
+]
