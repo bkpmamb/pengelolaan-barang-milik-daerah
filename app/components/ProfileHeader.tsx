@@ -64,7 +64,7 @@ export default function ProfileHeader() {
           </h1>
 
           {/* Updated line with responsive width and centering */}
-          <div className="h-1 bg-linear-to-r from-[#a20e0b] via-[#f6af1a] to-[#5170ff] rounded-full w-3/4 lg:w-24 mx-auto lg:mx-0 mb-3"></div>
+          <div className="h-1 bg-linear-to-r from-[#a20e0b] via-[#f6af1a] to-[#5170ff] rounded-full w-3/4 lg:w-56 mx-auto lg:mx-0 mb-3"></div>
 
           <h2 className="text-base lg:text-lg font-semibold text-gray-800 mb-4">
             Pengelolaan Barang Milik Daerah

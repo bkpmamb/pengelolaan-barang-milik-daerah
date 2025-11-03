@@ -13,7 +13,7 @@ export default function Footer() {
         transition={{ delay: 0.8 }}
       >
         <p className="text-stone-800 text-xs">
-          © 2024 Sipandai BMD - Balkesmas Ambarawa
+          © 2025 Sipandai BMD - Balkesmas Ambarawa
         </p>
         <p className="text-stone-800 text-[10px] mt-1">
           Sistem Informasi Pengelolaan Barang Milik Daerah
