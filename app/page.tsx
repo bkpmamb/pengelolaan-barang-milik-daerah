@@ -26,15 +26,15 @@ export default function Home() {
         backgroundImage: "url(/images/gedung2.jpg)",
       }}
     >
-      {/* Gradient Overlay */}
-      <div className="min-h-screen bg-linear-to-t from-blue-50/20 via-white/5 to-transparent backdrop-blur-sm">
+      {/* Enhanced Gradient Overlay - More white at the top for readability */}
+      <div className="min-h-screen bg-linear-to-b from-white/90 via-white/70 to-blue-50/20 backdrop-blur-sm">
         {/* Main Content */}
-        <div className="container mx-auto px-4 py-6 max-w-md">
+        <div className="container mx-auto px-4 py-6 max-w-4xl">
           <ProfileHeader />
 
           {/* Links List */}
           <motion.div
-            className="space-y-3"
+            className="space-y-2"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
