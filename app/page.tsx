@@ -20,147 +20,184 @@ export default function Home() {
   };
 
   return (
-    <div
-      className="min-h-screen bg-cover bg-center bg-fixed"
-      style={{
-        backgroundImage: "url(/images/gedung2.jpg)",
-      }}
-    >
-      {/* Enhanced Gradient Overlay - More white at the top for readability */}
-      <div className="min-h-screen bg-linear-to-b from-white/90 via-white/70 to-blue-50/20 backdrop-blur-sm">
-        {/* Main Content */}
-        <div className="container mx-auto px-4 py-6 max-w-4xl">
-          <ProfileHeader />
+    <div className="min-h-screen bg-white">
+      {/* Minimalist Paper Texture Background */}
+      <div 
+        className="fixed inset-0 pointer-events-none opacity-10"
+        style={{
+          backgroundImage: `
+            /* Subtle paper texture */
+            radial-gradient(circle at 25% 25%, rgba(0,0,0,0.05) 0%, transparent 50%),
+            radial-gradient(circle at 75% 75%, rgba(0,0,0,0.03) 0%, transparent 50%),
+            /* Very subtle grid lines */
+            linear-gradient(90deg, transparent 99%, rgba(0,0,0,0.02) 99%),
+            linear-gradient(transparent 99%, rgba(0,0,0,0.02) 99%),
+            /* Paper grain effect */
+            url("data:image/svg+xml,%3Csvg viewBox='0 0 400 400' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='1' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)' opacity='0.1'/%3E%3C/svg%3E")
+          `,
+          backgroundSize: `
+            /* Texture sizes */
+            150% 150%,
+            150% 150%,
+            /* Grid sizes */
+            20px 20px,
+            20px 20px,
+            /* Noise size */
+            200px 200px
+          `,
+          backgroundBlendMode: 'multiply'
+        }}
+      />
+      
+      {/* Very subtle gradient overlay */}
+      <div className="fixed inset-0 bg-linear-to-br from-blue-50/10 to-gray-50/5 pointer-events-none" />
+      
+      {/* Main Content */}
+      <div className="relative z-10 container mx-auto px-4 py-6 max-w-4xl">
+        <ProfileHeader />
 
-          {/* Links List */}
+        <div className="max-w-4xl mx-auto bg-white/95 backdrop-blur-sm border border-gray-200/60 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-6">
+          <div className="mb-8 text-center">
+            <h1 className="text-3xl font-bold text-gray-800 mb-2">
+              Arsip Barang Milik Daerah
+            </h1>
+          </div>
           <motion.div
             className="space-y-2"
             variants={containerVariants}
             initial="hidden"
             animate="visible"
           >
-            {data.map((item) => (
+            {data.map((item, index) => (
               <motion.div
                 key={item.no}
                 variants={itemVariants}
-                className="bg-white/95 backdrop-blur-md border border-gray-200/80 rounded-xl hover:shadow-lg transition-all duration-300"
+                className="relative"
               >
-                {/* Main Link */}
-                <div className="p-4">
-                  <div className="flex items-center justify-between">
-                    <a
-                      href={item.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex items-center space-x-3 flex-1 group"
-                    >
-                      {/* Link Icon */}
-                      <div className="w-8 h-8 rounded-lg bg-linear-to-br from-blue-500 to-indigo-600 flex items-center justify-center shrink-0">
-                        <svg
-                          className="w-4 h-4 text-white"
-                          fill="none"
-                          stroke="currentColor"
-                          viewBox="0 0 24 24"
-                        >
-                          <path
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                            strokeWidth={2}
-                            d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                          />
-                        </svg>
-                      </div>
-                      <span className="font-semibold text-gray-800 text-left text-sm group-hover:text-blue-600 transition-colors">
-                        {item.nama}
-                      </span>
-                    </a>
+                {/* Separator antar item */}
+                {index > 0 && (
+                  <div className="absolute -top-1 left-10 right-10 h-px bg-linear-to-r from-transparent via-gray-300/50 to-transparent"></div>
+                )}
 
-                    {/* Dropdown Toggle Button */}
-                    {item.children && (
-                      <motion.button
-                        onClick={() => toggleItem(item.no)}
-                        className="ml-2 p-2 rounded-lg bg-gray-100 hover:bg-blue-100 text-gray-500 hover:text-blue-600 transition-colors duration-200 shrink-0"
-                        whileHover={{ scale: 1.05 }}
-                        whileTap={{ scale: 0.95 }}
+                {/* Card Item */}
+                <div className="bg-white/90 backdrop-blur-sm border border-gray-200/60 rounded-xl hover:bg-white hover:shadow-md transition-all duration-300 overflow-hidden">
+                  <div className="p-4">
+                    <div className="flex items-center justify-between">
+                      {/* Main Link */}
+                      <a
+                        href={item.link}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="flex items-center space-x-3 flex-1 group"
                       >
-                        <motion.svg
-                          width="16"
-                          height="16"
-                          viewBox="0 0 24 24"
-                          fill="none"
-                          animate={{
-                            rotate: expandedItem === item.no ? 180 : 0,
-                          }}
-                          transition={{ duration: 0.2 }}
-                        >
-                          <path
-                            d="m6 9 6 6 6-6"
+                        <div className="w-8 h-8 rounded-lg bg-linear-to-br from-blue-500 to-indigo-600 flex items-center justify-center shrink-0 shadow-sm group-hover:shadow-md transition-shadow">
+                          <svg
+                            className="w-4 h-4 text-white"
+                            fill="none"
                             stroke="currentColor"
-                            strokeWidth="2"
-                            strokeLinecap="round"
-                            strokeLinejoin="round"
-                          />
-                        </motion.svg>
-                      </motion.button>
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                            />
+                          </svg>
+                        </div>
+
+                        <span className="font-semibold text-gray-800 text-sm group-hover:text-blue-600 transition-colors">
+                          {item.nama}
+                        </span>
+                      </a>
+
+                      {/* Toggle Button */}
+                      {item.children && (
+                        <motion.button
+                          onClick={() => toggleItem(item.no)}
+                          className="ml-2 p-2 rounded-lg bg-gray-50 hover:bg-blue-50 text-gray-500 hover:text-blue-600 transition-colors border border-gray-200 hover:border-blue-200 duration-200 shrink-0"
+                          whileHover={{ scale: 1.05 }}
+                          whileTap={{ scale: 0.95 }}
+                        >
+                          <motion.svg
+                            width="16"
+                            height="16"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            animate={{
+                              rotate: expandedItem === item.no ? 180 : 0,
+                            }}
+                            transition={{ duration: 0.2 }}
+                          >
+                            <path
+                              d="m6 9 6 6 6-6"
+                              stroke="currentColor"
+                              strokeWidth="2"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                            />
+                          </motion.svg>
+                        </motion.button>
+                      )}
+                    </div>
+
+                    {/* Dropdown Children */}
+                    {item.children && (
+                      <AnimatePresence>
+                        {expandedItem === item.no && (
+                          <motion.div
+                            variants={dropdownVariants}
+                            initial="hidden"
+                            animate="visible"
+                            exit="hidden"
+                            className="overflow-hidden"
+                          >
+                            <div className="mt-4 pt-4 border-t border-gray-200/50 space-y-2">
+                              {item.children.map((child, childIndex) => (
+                                <motion.a
+                                  key={child.nama}
+                                  href={child.link}
+                                  target="_blank"
+                                  rel="noopener noreferrer"
+                                  className="flex items-center space-x-3 text-sm text-gray-600 hover:text-blue-600 transition-colors py-2 px-3 rounded-lg hover:bg-blue-50/70 group border-l-2 border-l-transparent hover:border-l-blue-400"
+                                  initial={{ opacity: 0, x: -10 }}
+                                  animate={{ opacity: 1, x: 0 }}
+                                  transition={{ delay: childIndex * 0.05 }}
+                                  whileHover={{ x: 4 }}
+                                >
+                                  <div className="w-6 h-6 rounded-md bg-blue-100 flex items-center justify-center shrink-0 group-hover:bg-blue-200 transition-colors">
+                                    <svg
+                                      className="w-3 h-3 text-blue-600"
+                                      fill="none"
+                                      stroke="currentColor"
+                                      viewBox="0 0 24 24"
+                                    >
+                                      <path
+                                        strokeLinecap="round"
+                                        strokeLinejoin="round"
+                                        strokeWidth={2}
+                                        d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                                      />
+                                    </svg>
+                                  </div>
+                                  <span className="font-medium">
+                                    {child.nama}
+                                  </span>
+                                </motion.a>
+                              ))}
+                            </div>
+                          </motion.div>
+                        )}
+                      </AnimatePresence>
                     )}
                   </div>
-
-                  {/* Children Links Dropdown */}
-                  {item.children && (
-                    <AnimatePresence>
-                      {expandedItem === item.no && (
-                        <motion.div
-                          variants={dropdownVariants}
-                          initial="hidden"
-                          animate="visible"
-                          exit="hidden"
-                          className="overflow-hidden"
-                        >
-                          <div className="mt-3 pt-3 border-t border-gray-100 space-y-2">
-                            {item.children.map((child, index) => (
-                              <motion.a
-                                key={child.nama}
-                                href={child.link}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="flex items-center space-x-3 text-xs text-gray-600 hover:text-blue-600 transition-colors duration-200 py-2 px-3 rounded-lg hover:bg-blue-50/50 group"
-                                initial={{ opacity: 0, x: -10 }}
-                                animate={{ opacity: 1, x: 0 }}
-                                transition={{ delay: index * 0.05 }}
-                                whileHover={{ x: 4 }}
-                              >
-                                <div className="w-5 h-5 rounded-md bg-blue-100 flex items-center justify-center shrink-0 group-hover:bg-blue-200 transition-colors">
-                                  <svg
-                                    className="w-3 h-3 text-blue-600"
-                                    fill="none"
-                                    stroke="currentColor"
-                                    viewBox="0 0 24 24"
-                                  >
-                                    <path
-                                      strokeLinecap="round"
-                                      strokeLinejoin="round"
-                                      strokeWidth={2}
-                                      d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                                    />
-                                  </svg>
-                                </div>
-                                <span className="font-medium">
-                                  {child.nama}
-                                </span>
-                              </motion.a>
-                            ))}
-                          </div>
-                        </motion.div>
-                      )}
-                    </AnimatePresence>
-                  )}
                 </div>
               </motion.div>
             ))}
           </motion.div>
-
-          <Footer />
         </div>
+
+        <Footer />
       </div>
     </div>
   );

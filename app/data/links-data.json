@@ -11,6 +11,10 @@
       {
         "nama": "Rencana Kebutuhan Barang Milik Daerah (RKBMD)",
         "link": "https://drive.google.com/drive/folders/1eTJH1WqdZxiw9A9Nfu3sXNOBtJcd2bQB"
+      },
+      {
+        "nama": "Usulan Pengadaan Obat/Reagen/BHP Ke Dinkes",
+        "link": "https://drive.google.com/drive/folders/1VHz-E8ObrSnrG7ntvJgBc2td0Au1w5jW"
       }
     ]
   },
@@ -26,6 +30,10 @@
       {
         "nama": "Laporan Pengadaan BMD",
         "link": "https://drive.google.com/drive/folders/1Th0uutgbwZHcslXR1AC5rRo22jMrVBEc"
+      },
+      {
+        "nama": "Dokumen Pengajuan Pengadaan Non TKDN",
+        "link": "https://drive.google.com/drive/folders/1GdVwYQH00pcr8R4cOBPUVhhKpjDMaCgW"
       }
     ]
   },
@@ -65,6 +73,10 @@
       {
         "nama": "Sensus Barang Milik Daerah",
         "link": "https://drive.google.com/drive/folders/1D6BRh-h0S0D6gc90DkgF2cDETkzSorai"
+      },
+      {
+        "nama": "Sertifikat Kalibrasi Balkesmas Wilayah Ambarawa",
+        "link": "https://drive.google.com/drive/folders/1coeYBjl4bnz1yCSpomvQoin73tlQAkII"
       }
     ]
   },
@@ -76,7 +88,13 @@
   {
     "no": 7,
     "nama": "Pemindahtanganan",
-    "link": "https://drive.google.com/drive/folders/155ytJ4uQ8H92Y81Ge5n64mFbfKp_1hIz"
+    "link": "https://drive.google.com/drive/folders/155ytJ4uQ8H92Y81Ge5n64mFbfKp_1hIz",
+    "children": [
+      {
+        "nama": "Dokumen Hibah",
+        "link": "https://drive.google.com/drive/folders/1gC2fC5xssDkuBuQTEwY4C5ntyqkM2a5F"
+      }
+    ]
   },
   {
     "no": 8,
@@ -85,8 +103,18 @@
   },
   {
     "no": 9,
-    "nama": "Penghapusan",
-    "link": "https://drive.google.com/drive/folders/1mMhsKDwhMli9qezmY1Q7FwuWg6d9-29I"
+    "nama": "Penghapusan dan Pemusnahan",
+    "link": "https://drive.google.com/drive/folders/1mMhsKDwhMli9qezmY1Q7FwuWg6d9-29I",
+    "children": [
+      {
+        "nama": "Pemusnahan Obat",
+        "link": "https://drive.google.com/drive/folders/1Uidi0845qp0VgstjmyqMeJoj5woGM3xt"
+      },
+      {
+        "nama": "Penghapusan Aset Tetap",
+        "link": "https://drive.google.com/drive/folders/1tvN8iqwusQIucHJtLAP48a4guwGKSWYs"
+      }
+    ]
   },
   {
     "no": 10,
