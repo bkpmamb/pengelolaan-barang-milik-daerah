@@ -35,7 +35,7 @@ export default function ProfileHeader() {
 
   return (
     <motion.div
-      className="flex flex-col items-center bg-white rounded-2xl p-6 shadow-lg mb-4 border border-gray-200"
+      className="flex flex-col items-center bg-white/50 rounded-2xl p-6 shadow-lg mb-4 border border-gray-200"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
     >

@@ -22,20 +22,20 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-white">
       {/* Minimalist Paper Texture Background */}
+      {/* Grid Background */}
       <div
         className="fixed inset-0 h-full w-full pointer-events-none opacity-30 bg-white 
   bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] 
   bg-size-[24px_24px]"
       ></div>
 
-      {/* Very subtle gradient overlay */}
-      <div className="fixed inset-0 bg-linear-to-br from-blue-50/10 to-gray-50/5 pointer-events-none" />
-
+      {/* Gradient Overlay */}
+      <div className="fixed inset-0 bg-linear-to-br from-[#4a879f]/50 to-[#f6af1a]/50 pointer-events-none" />
       {/* Main Content */}
       <div className="relative z-10 container mx-auto px-4 py-6 max-w-4xl">
         <ProfileHeader />
 
-        <div className="max-w-4xl mx-auto bg-white/95 backdrop-blur-sm border border-gray-200/60 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-6">
+        <div className="max-w-4xl mx-auto bg-white/45 backdrop-blur-sm border border-gray-200/60 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-6">
           <div className="mb-8 text-center">
             <h1 className="text-3xl font-bold text-gray-800 mb-2">
               Arsip Barang Milik Daerah
@@ -55,11 +55,11 @@ export default function Home() {
               >
                 {/* Separator antar item */}
                 {index > 0 && (
-                  <div className="absolute -top-1 left-10 right-10 h-px bg-linear-to-r from-transparent via-gray-300/50 to-transparent"></div>
+                  <div className="absolute -top-1 left-10 right-10 h-px bg-linear-to-r from-transparent via-[#4a879f]/20 to-transparent"></div>
                 )}
 
                 {/* Card Item */}
-                <div className="bg-white/90 backdrop-blur-sm border border-gray-200/60 rounded-xl hover:bg-white hover:shadow-md transition-all duration-300 overflow-hidden">
+                <div className="bg-white/10 backdrop-blur-sm border border-gray-200/60 rounded-xl hover:bg-white hover:shadow-md transition-all duration-300 overflow-hidden group">
                   <div className="p-4">
                     <div className="flex items-center justify-between">
                       {/* Main Link */}
@@ -69,7 +69,7 @@ export default function Home() {
                         rel="noopener noreferrer"
                         className="flex items-center space-x-3 flex-1 group"
                       >
-                        <div className="w-8 h-8 rounded-lg bg-linear-to-br from-blue-500 to-indigo-600 flex items-center justify-center shrink-0 shadow-sm group-hover:shadow-md transition-shadow">
+                        <div className="w-8 h-8 rounded-lg bg-linear-to-br from-[#f6af1a] to-[#4a879f] flex items-center justify-center shrink-0 shadow-sm group-hover:shadow-md transition-shadow group-hover:scale-105">
                           <svg
                             className="w-4 h-4 text-white"
                             fill="none"
@@ -85,7 +85,7 @@ export default function Home() {
                           </svg>
                         </div>
 
-                        <span className="font-semibold text-gray-800 text-sm group-hover:text-blue-600 transition-colors">
+                        <span className="font-semibold text-gray-800 text-sm group-hover:text-[#4a879f] transition-colors">
                           {item.nama}
                         </span>
                       </a>
@@ -94,7 +94,7 @@ export default function Home() {
                       {item.children && (
                         <motion.button
                           onClick={() => toggleItem(item.no)}
-                          className="ml-2 p-2 rounded-lg bg-gray-50 hover:bg-blue-50 text-gray-500 hover:text-blue-600 transition-colors border border-gray-200 hover:border-blue-200 duration-200 shrink-0"
+                          className="ml-2 p-2 rounded-lg bg-gray-50 hover:bg-[#4a879f]/10 text-gray-500 hover:text-[#4a879f] transition-colors border border-gray-200 hover:border-[#4a879f]/30 duration-200 shrink-0"
                           whileHover={{ scale: 1.05 }}
                           whileTap={{ scale: 0.95 }}
                         >
@@ -131,22 +131,22 @@ export default function Home() {
                             exit="hidden"
                             className="overflow-hidden"
                           >
-                            <div className="mt-4 pt-4 border-t border-gray-200/50 space-y-2">
+                            <div className="mt-4 pt-4 border-t border-[#4a879f]/20 space-y-2">
                               {item.children.map((child, childIndex) => (
                                 <motion.a
                                   key={child.nama}
                                   href={child.link}
                                   target="_blank"
                                   rel="noopener noreferrer"
-                                  className="flex items-center space-x-3 text-sm text-gray-600 hover:text-blue-600 transition-colors py-2 px-3 rounded-lg hover:bg-blue-50/70 group border-l-2 border-l-transparent hover:border-l-blue-400"
+                                  className="flex items-center space-x-3 text-sm text-gray-600 hover:text-[#4a879f] transition-colors py-2 px-3 rounded-lg hover:bg-[#4a879f]/10 group border-l-2 border-l-transparent hover:border-l-[#f6af1a]"
                                   initial={{ opacity: 0, x: -10 }}
                                   animate={{ opacity: 1, x: 0 }}
                                   transition={{ delay: childIndex * 0.05 }}
                                   whileHover={{ x: 4 }}
                                 >
-                                  <div className="w-6 h-6 rounded-md bg-blue-100 flex items-center justify-center shrink-0 group-hover:bg-blue-200 transition-colors">
+                                  <div className="w-6 h-6 rounded-md bg-[#4a879f]/10 flex items-center justify-center shrink-0 group-hover:bg-[#4a879f]/20 transition-colors">
                                     <svg
-                                      className="w-3 h-3 text-blue-600"
+                                      className="w-3 h-3 text-[#4a879f]"
                                       fill="none"
                                       stroke="currentColor"
                                       viewBox="0 0 24 24"

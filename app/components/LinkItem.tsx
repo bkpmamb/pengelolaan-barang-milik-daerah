@@ -28,7 +28,7 @@ export default function LinkItem({
   return (
     <motion.div
       variants={itemVariants}
-      className="bg-white/95 backdrop-blur-md border border-gray-200/80 rounded-xl hover:shadow-lg transition-all duration-300"
+      className="bg-white/50 backdrop-blur-md border border-gray-200/80 rounded-xl hover:shadow-lg transition-all duration-300"
     >
       <div className="p-4">
         <div className="flex items-center justify-between">
