@@ -35,7 +35,7 @@ export default function ProfileHeader() {
 
   return (
     <motion.div
-      className="flex flex-col items-center bg-white/50 rounded-2xl p-6 shadow-lg mb-4 border border-gray-200"
+      className="flex flex-col items-center bg-[#FFFFFF] rounded-2xl p-6 shadow-lg mb-4 border border-gray-200"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
     >
@@ -59,22 +59,18 @@ export default function ProfileHeader() {
 
         {/* Title and Description */}
         <div className="flex-1">
-          <h1 className="text-2xl lg:text-3xl font-bold tracking-tight leading-tight mb-2">
+          <h1 className="text-5xl lg:text-7xl font-bold tracking-tight leading-tight mb-2">
             {renderColoredTitle("SIPANDAI-BMD")}
           </h1>
 
           {/* Updated line with responsive width and centering */}
-          <div className="h-1 bg-linear-to-r from-[#a20e0b] via-[#f6af1a] to-[#5170ff] rounded-full w-3/4 lg:w-56 mx-auto lg:mx-0 mb-3"></div>
-
-          <h2 className="text-base lg:text-lg font-semibold text-gray-800 mb-4">
-            Pengelolaan Barang Milik Daerah
-          </h2>
+          <div className="h-1 bg-linear-to-r from-[#a20e0b] via-[#f6af1a] to-[#5170ff] rounded-full w-[90%] mx-auto lg:mx-0 mb-3"></div>
 
           {/* Description moved here to be more integrated */}
-          <p className="text-sm text-gray-700 leading-relaxed max-w-2xl">
+          <p className="text-xl text-gray-700 leading-relaxed max-w-2xl">
             Sistem informasi pengelolaan pelaporan dan arsip barang milik daerah
-            untuk pengelolaan dokumen yang transparan dan akuntabel di Balai
-            Kesehatan Masyarakat Wilayah Ambarawa.
+            untuk pengelolaan dokumen yang transparan dan akuntabel di Balkesmas
+            Wilayah Ambarawa.
           </p>
         </div>
       </div>

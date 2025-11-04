@@ -12,10 +12,10 @@ export default function Footer() {
         animate={{ opacity: 1 }}
         transition={{ delay: 0.8 }}
       >
-        <p className="text-stone-800 text-xs">
+        <p className="text-[#ebe8e2] text-xs">
           © 2025 Sipandai BMD - Balkesmas Ambarawa
         </p>
-        <p className="text-stone-800 text-[10px] mt-1">
+        <p className="text-[#ebe8e2] text-sm mt-1">
           Sistem Informasi Pengelolaan Barang Milik Daerah
         </p>
       </motion.footer>
