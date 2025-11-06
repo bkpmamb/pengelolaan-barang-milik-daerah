@@ -11,12 +11,32 @@
   },
   {
     "no": 3,
-    "nama": "Form Laporan Pemeliharaan Barang Milik Daerah",
+    "nama": "Form Laporan Pemeliharaan BMD",
     "link": "https://forms.gle/opKP5aXhtoZxXy1F9"
   },
   {
     "no": 4,
-    "nama": "Form Laporan Kerusakan Barang Milik Daerah",
+    "nama": "Form Laporan Kerusakan BMD",
     "link": "https://forms.gle/EbNKQkfoXGtQRyjt5"
+  },
+  {
+    "no": 5,
+    "nama": "Form Peminjaman Alat Kesehatan",
+    "link": "https://forms.gle/isbgfoghKiToVCkL9"
+  },
+  {
+    "no": 6,
+    "nama": "Form Pengembalian Alat Keshatan",
+    "link": "https://forms.gle/ervEgP3J1sB8SNMy6"
+  },
+  {
+    "no": 7,
+    "nama": "Form Usulan Penghapusan BMD (Kondisi Rusak Berat)",
+    "link": "https://forms.gle/LF9VbijCuhWvGvgr8"
+  },
+  {
+    "no": 8,
+    "nama": "Form Mutasi BMD",
+    "link": "https://forms.gle/QDs2g7fYeQqbmgNp8"
   }
 ]
