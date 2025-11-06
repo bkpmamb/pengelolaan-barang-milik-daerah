@@ -46,7 +46,7 @@ export default function Home() {
                 transition={{ duration: 0.5, ease: "easeOut" }}
               />
               <motion.h1
-                className="text-xl sm:text-2xl md:text-2xl lg:text-3xl  font-bold text-[#ebe8e2] mb-2 text-center relative z-10 px-4 py-2 uppercase"
+                className="text-base sm:text-xl md:text-2xl lg:text-3xl  font-bold text-[#ebe8e2] mb-2 text-center relative z-10 px-4 py-2 uppercase"
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
@@ -121,7 +121,7 @@ export default function Home() {
                 transition={{ duration: 0.5, ease: "easeOut" }}
               />
               <motion.h1
-                className="text-xl sm:text-2xl md:text-2xl lg:text-3xl  font-bold text-[#ebe8e2] mb-2 text-center relative z-10 px-4 py-2 uppercase"
+                className="text-base sm:text-xl md:text-2xl lg:text-3xl  font-bold text-[#ebe8e2] mb-2 text-center relative z-10 px-4 py-2 uppercase"
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
