@@ -46,7 +46,7 @@ export default function Home() {
                 transition={{ duration: 0.5, ease: "easeOut" }}
               />
               <motion.h1
-                className="text-3xl font-bold text-[#ebe8e2] mb-2 text-center relative z-10 px-4 py-2 uppercase"
+                className="text-xl sm:text-2xl md:text-2xl lg:text-3xl  font-bold text-[#ebe8e2] mb-2 text-center relative z-10 px-4 py-2 uppercase"
                 initial={{ y: -20, opacity: 0 }}
                 animate={{ y: 0, opacity: 1 }}
                 transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
@@ -99,7 +99,7 @@ export default function Home() {
                           </svg>
                         </div>
 
-                        <span className="font-semibold text-[#bd444b] text-sm group-hover:text-red-800 transition-colors">
+                        <span className="font-semibold text-[#bd444b] text-xs md:text-sm lg:text-base group-hover:text-red-800 transition-colors">
                           {item.nama}
                         </span>
                       </a>
@@ -112,21 +112,23 @@ export default function Home() {
         </div>
 
         <div className="max-w-4xl mx-auto backdrop-blur-sm border border-gray-200/60 rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-6">
-          <div className="relative w-full">
-            <motion.div
-              className="absolute inset-0 bg-[#5ba56c] rounded-lg"
-              initial={{ scale: 0.8, opacity: 0 }}
-              animate={{ scale: 1, opacity: 1 }}
-              transition={{ duration: 0.5, ease: "easeOut" }}
-            />
-            <motion.h1
-              className="text-3xl font-bold text-[#ebe8e2] mb-2 text-center relative z-10 px-4 py-2 uppercase"
-              initial={{ y: -20, opacity: 0 }}
-              animate={{ y: 0, opacity: 1 }}
-              transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
-            >
-              Arsip Pengelolaan BMD
-            </motion.h1>
+          <div className="mb-8">
+            <div className="relative w-full">
+              <motion.div
+                className="absolute inset-0 bg-[#5ba56c] rounded-lg"
+                initial={{ scale: 0.8, opacity: 0 }}
+                animate={{ scale: 1, opacity: 1 }}
+                transition={{ duration: 0.5, ease: "easeOut" }}
+              />
+              <motion.h1
+                className="text-xl sm:text-2xl md:text-2xl lg:text-3xl  font-bold text-[#ebe8e2] mb-2 text-center relative z-10 px-4 py-2 uppercase"
+                initial={{ y: -20, opacity: 0 }}
+                animate={{ y: 0, opacity: 1 }}
+                transition={{ duration: 0.5, delay: 0.1, ease: "easeOut" }}
+              >
+                Arsip Pengelolaan BMD
+              </motion.h1>
+            </div>
           </div>
           <motion.div
             className="space-y-2"
@@ -172,7 +174,7 @@ export default function Home() {
                           </svg>
                         </div>
 
-                        <span className="font-semibold text-[#bd444b] text-sm group-hover:text-red-800 transition-colors">
+                        <span className="font-semibold text-[#bd444b] text-xs md:text-sm lg:text-base group-hover:text-red-800 transition-colors">
                           {item.nama}
                         </span>
                       </a>

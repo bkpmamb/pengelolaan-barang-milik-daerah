@@ -67,7 +67,7 @@ export default function ProfileHeader() {
           <div className="h-1 bg-linear-to-r from-[#a20e0b] via-[#f6af1a] to-[#5170ff] rounded-full w-[90%] mx-auto lg:mx-0 mb-3"></div>
 
           {/* Description moved here to be more integrated */}
-          <p className="text-xl text-gray-700 leading-relaxed max-w-2xl">
+          <p className="text-xs sm:text-base md:text-lg text-gray-700 leading-relaxed max-w-2xl">
             Sistem informasi pengelolaan pelaporan dan arsip barang milik daerah
             untuk pengelolaan dokumen yang transparan dan akuntabel di Balkesmas
             Wilayah Ambarawa.
