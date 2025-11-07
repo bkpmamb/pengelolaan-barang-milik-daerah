@@ -26,11 +26,7 @@ export default function Home() {
       <div className="fixed inset-0 bg-[url('/images/bg-texture.png')] bg-cover bg-center bg-no-repeat pointer-events-none"></div>
 
       {/* Grid Background */}
-      <div
-        className="fixed inset-0 h-full w-full pointer-events-none opacity-10 bg-[#ebe8e2] 
-  bg-[linear-gradient(to_right,#00000012_1px,transparent_1px),linear-gradient(to_bottom,#00000012_1px,transparent_1px)] 
-  bg-size-[24px_24px]"
-      ></div>
+      <div className="fixed inset-0 h-full w-full pointer-events-none opacity-10 bg-[#ebe8e2] bg-[linear-gradient(to_right,#00000012_1px,transparent_1px),linear-gradient(to_bottom,#00000012_1px,transparent_1px)] bg-size-[24px_24px]"></div>
 
       {/* Main Content */}
       <div className="relative z-10 max-w-4xl mx-auto bg-[#bd444b] backdrop-blur-sm border border-[#ffffff] rounded-xl shadow-sm hover:shadow-md transition-all duration-300 p-6">
@@ -100,7 +96,7 @@ export default function Home() {
                         </div>
 
                         <span className="font-semibold text-[#bd444b] text-xs md:text-sm lg:text-base group-hover:text-red-800 transition-colors">
-                          {item.nama}
+                          {item.no}. {item.nama}
                         </span>
                       </a>
                     </div>
@@ -175,7 +171,7 @@ export default function Home() {
                         </div>
 
                         <span className="font-semibold text-[#bd444b] text-xs md:text-sm lg:text-base group-hover:text-red-800 transition-colors">
-                          {item.nama}
+                          {item.no}. {item.nama}
                         </span>
                       </a>
 
@@ -249,6 +245,7 @@ export default function Home() {
                                     </svg>
                                   </div>
                                   <span className="font-medium text-[#498757]">
+                                    {`${item.no}.${childIndex + 1}`}{" "}
                                     {child.nama}
                                   </span>
                                 </motion.a>
