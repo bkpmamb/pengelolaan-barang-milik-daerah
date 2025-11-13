@@ -59,7 +59,7 @@ export default function ProfileHeader() {
 
         {/* Title and Description */}
         <div className="flex-1">
-          <h1 className="text-4xl lg:text-7xl font-bold tracking-tight leading-tight mb-2">
+          <h1 className="text-3xl lg:text-6xl font-bold tracking-tight leading-tight mb-2">
             {renderColoredTitle("SIPANDAI-BMD")}
           </h1>
 
